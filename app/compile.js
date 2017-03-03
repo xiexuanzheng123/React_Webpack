@@ -4,7 +4,7 @@ import ReactDom from 'react-dom';
 var HelloMessage = React.createClass({
     displayName: 'HelloMessage',
     render: function() {
-        return React.createElement('div',null,"Hello ", this.props.name);
+        return React.createElement('div',{className: 'test'},["Hello ", this.props.name]);
     }
 });
 ReactDom.render(
